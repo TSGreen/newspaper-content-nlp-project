@@ -12,8 +12,11 @@ So far have:
 - performed EDA: [notebooks/exploratory_analysis](https://github.com/TSGreen/GuardianNews_NLP/blob/master/notebooks/exploratory_analysis.ipynb)
 - performed exploratory NLP and word tokenisation: [notebooks/notebooks/exploratory_nlp](https://github.com/TSGreen/GuardianNews_NLP/blob/master/notebooks/exploratory_nlp.ipynb)
 
-To do:
+Possible avenues of exploration:
 - build classification model to classify articles into streams of content (e.g. news, opinion, sports, lifestyle, arts) using the text content of an article.
+- explore sentiment analysis on articles
+- use NER for topic classification (politics, health, education, etc)
+- use NER to analyse trending topics in news reporting  -- compare relative proportion of reporting on topics such as health, education or politics over time.  
 
 Project Organization
 ------------
