@@ -1,7 +1,22 @@
 GuardianNews
 ==============================
 
-Analysis of content from Guardian publications
+Analysis of content from  the Guardian publications (The Guardian newpaper, The Observer Newspaper and guardian.com).
+
+<h2>Status</h2> 
+
+So far have:
+- scraped the full article data on a day by day basis for several years from API: [src/data/guardian_api_pull.py](https://github.com/TSGreen/GuardianNews_NLP/blob/master/src/data/guardian_api_pull.py)
+- collated the raw json files of daily data into single csv files for each year: [src/data/create_dataframe.py](https://github.com/TSGreen/GuardianNews_NLP/blob/master/src/data/create_dataframe.py)
+- processed and cleaned the data files: [src/data/clean_dataframe.py](https://github.com/TSGreen/GuardianNews_NLP/blob/master/src/data/clean_dataframe.py)
+- performed EDA: [notebooks/exploratory_analysis](https://github.com/TSGreen/GuardianNews_NLP/blob/master/notebooks/exploratory_analysis.ipynb)
+- performed exploratory NLP and word tokenisation: [notebooks/notebooks/exploratory_nlp](https://github.com/TSGreen/GuardianNews_NLP/blob/master/notebooks/exploratory_nlp.ipynb)
+
+Possible avenues of exploration:
+- build classification model to classify articles into streams of content (e.g. news, opinion, sports, lifestyle, arts) using the text content of an article.
+- explore sentiment analysis on articles
+- use NER for topic classification (politics, health, education, etc)
+- use NER to analyse trending topics in news reporting  -- compare relative proportion of reporting on topics such as health, education or politics over time.  
 
 Project Organization
 ------------
