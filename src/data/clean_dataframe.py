@@ -9,9 +9,11 @@ sets the datatypes.
 import pandas as pd
 from pathlib import Path
 
+year = '2020'
+
 filename = Path.cwd().parent.parent.joinpath('data',
                                              'interim',
-                                             'full_dataframe_2017_2020.csv')
+                                             'full_dataframe_'+year+'.csv')
 
 def open_csvfile(filename):
     if filename.exists():
@@ -96,7 +98,7 @@ df['webPublicationDate'] = pd.to_datetime(df['webPublicationDate'])
 
 save_filename = Path.cwd().parent.parent.joinpath('data',
                                                   'interim',
-                                                 'cleaned_2017_2020.csv')
+                                                 'cleaned_'+year+'.csv')
 print(f'\nSaving file: {save_filename} ...')
 df.to_csv(save_filename)
 print(f'Saving file complete.\n')
